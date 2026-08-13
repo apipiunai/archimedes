@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "title": "Flask Server",
+        "description": "Flask is a web framework for Python.",
+        "component": null,
+        "dependencies": [
+            "pip install flask",
+            "pip install flask-cors"
+        ],
+        "codes": [
+            {
+                "name": "app.py",
+                "code": "codes/flask_server.txt"
+            }
+        ],
+        "download": "codes/flask_server.txt"
+    }
+]
