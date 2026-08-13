@@ -1,0 +1,26 @@
+{
+    "ingles": {
+        "nav": {
+            "Components": "Components",
+            "Tutorials": "Tutorials"
+        },
+        "common": {
+            "loading": "Loading...",
+            "error": "Error",
+            "submit": "Submit",
+            "cancel": "Cancel"
+        }
+    },
+    "espanol": {
+        "nav": {
+            "Components": "Componentes",
+            "Tutorials": "Tutoriales"
+        },
+        "common": {
+            "loading": "Cargando...",
+            "error": "Error",
+            "submit": "Enviar",
+            "cancel": "Cancelar"
+        }
+    }
+}
