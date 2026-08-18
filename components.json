@@ -80,5 +80,22 @@
             }
         ],
         "download": "codes/select.txt"
+    },
+    {
+        "id": 6,
+        "category": "react charts",
+        "title": "Bar Chart",
+        "description": "A bar chart component for data visualization.",
+        "component": "bar_chart",
+        "dependencies": [
+            "npm install recharts"
+        ],
+        "codes": [
+            {
+                "name": "BarChart.jsx",
+                "code": "codes/bar_chart.txt"
+            }
+        ],
+        "download": "codes/bar_chart.txt"
     }
 ]
