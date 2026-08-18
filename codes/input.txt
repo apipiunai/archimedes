@@ -1,0 +1,37 @@
+import { useState } from "react";
+
+export function Input({ value, setValue, placeholder, style, type = "text" }) {
+    return (
+        <>
+            <input type={type} name="username"
+                style={{
+                    border: `1px solid #ccc`,
+                    padding: 10,
+                    borderRadius: 5,
+                    ...style,
+                }}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                placeholder={placeholder} />
+            <style>{`
+            input::placeholder {
+                opacity: 0.5;
+                font-size: 12px;
+            }
+        `}</style>
+        </>
+    );
+}
+
+
+export default function InputComponent() {
+
+    const [value, setValue] = useState("");
+
+    return (
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
+            <Input value={value} setValue={setValue} placeholder="Type something..." />
+            <Input type="number" value={value} setValue={setValue} placeholder="Type a number..." />
+        </div>
+    );
+}
