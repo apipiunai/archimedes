@@ -33,5 +33,22 @@
             }
         ],
         "download": "codes/line_chart.txt"
+    },
+    {
+        "id": 3,
+        "category": "react",
+        "title": "Custom Tooltip",
+        "description": "A line chart component with a custom tooltip.",
+        "component": "line_chart_tooltip",
+        "dependencies": [
+            "npm install recharts"
+        ],
+        "codes": [
+            {
+                "name": "LineChartTooltip.jsx",
+                "code": "codes/line_chart_tooltip.txt"
+            }
+        ],
+        "download": "codes/line_chart_tooltip.txt"
     }
 ]
