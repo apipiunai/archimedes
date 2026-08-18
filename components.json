@@ -65,5 +65,20 @@
             }
         ],
         "download": "codes/tabs.txt"
+    },
+    {
+        "id": 5,
+        "category": "react menus",
+        "title": "Select",
+        "description": "Select component for choosing an option from a list.",
+        "component": "select",
+        "dependencies": [],
+        "codes": [
+            {
+                "name": "Select.jsx",
+                "code": "codes/select.txt"
+            }
+        ],
+        "download": "codes/select.txt"
     }
 ]
