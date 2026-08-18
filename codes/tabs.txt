@@ -1,0 +1,51 @@
+import { useState } from "react";
+
+
+export function Tabs({ tabs, tab, setTab, style }) {
+
+    const [over, setOver] = useState(null);
+
+    return (
+        <div style={{ display: "flex", overflowX: "auto", width: "100%" }}>
+            {tabs.map((item, index) => (
+                <div
+                    key={index}
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "15px",
+                        borderBottom: tab === index ? `3px solid indianred` :
+                            over === index && tab !== index
+                                ? `3px solid indianred` : "3px solid transparent",
+                        transition: "all 0.1s ease",
+                        cursor: "pointer",
+                        ...style
+                    }}
+                    onMouseEnter={() => setOver(index)}
+                    onMouseLeave={() => setOver(null)}
+                    onClick={() => setTab(index)}
+                >
+                    {item}
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default function TabsComponents() {
+
+    const [tab, setTab] = useState(0);
+    const options = ["option1", "option2", "option3"];
+
+    return (
+        <div>
+            <Tabs tabs={options} tab={tab} setTab={setTab} />
+            <div style={{marginTop: 20 }}>
+                {tab == 0 && "Contenido 1"}
+                {tab == 1 && "Contenido 2"}
+                {tab == 2 && "Contenido 3"}
+            </div>
+        </div>
+    );
+}
