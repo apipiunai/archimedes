@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "category": "python",
         "title": "Flask Server",
         "description": "Flask is a web framework for Python.",
         "component": null,
@@ -15,5 +16,22 @@
             }
         ],
         "download": "codes/flask_server.txt"
+    },
+    {
+        "id": 2,
+        "category": "react",
+        "title": "Line Chart",
+        "description": "A line chart component for data visualization.",
+        "component": "line_chart",
+        "dependencies": [
+            "npm install recharts"
+        ],
+        "codes": [
+            {
+                "name": "LineChart.jsx",
+                "code": "codes/line_chart.txt"
+            }
+        ],
+        "download": "codes/line_chart.txt"
     }
 ]
